@@ -10,52 +10,52 @@ interface Award {
 
 const awards: Award[] = [
   {
-    title: 'Career Prep Fellow',
-    org: 'Management Leadership for Tomorrow',
-    year: '2025 cohort',
-    description: `Selected for MLT's flagship fellowship to build executive presence, career strategy, and leadership alongside a national cohort of Black and Latinx technologists.`,
+    title: '$8,275 AI Internship Scholarship',
+    org: 'University of California, Berkeley / DMIHER',
+    year: '2025',
+    description: 'Awarded a scholarship by DMIHER for the AI Internship Program at the University of California, Berkeley.',
   },
   {
-    title: 'Brilliant Black Minds Ambassador',
-    org: 'Karat',
-    year: '2024 - present',
-    description: 'Lead mock interviews and mentor engineers through technical readiness workshops so more HBCU students thrive in big tech interviews.',
-  },
-  {
-    title: 'Engineering Fellow',
-    org: 'Code2040',
-    year: '2024 - present',
-    description: 'Partner with industry mentors, deliver inclusive projects like PathFinderGPT, and give back through community teach-ins.',
-  },
-  {
-    title: 'ColorStack Fellow',
-    org: 'ColorStack',
-    year: '2022 - present',
-    description: 'Long-term community for Black and Latinx computer science majors; host peer-led study halls and recruiting workshops.',
-  },
-  {
-    title: 'Amazon MSI Engagement Program',
-    org: 'Amazon',
+    title: 'Runner-up, Medico Engino Hackathon',
+    org: 'Hackathon',
     year: '2024',
-    description: 'Immersive experience with Amazon engineers focused on product thinking, interview prep, and pathways into SDE roles.',
+    description: 'Secured runner-up position in the Medico Engino Hackathon with an innovative healthcare solution.',
   },
   {
-    title: '2nd Place - Future of Work Academy',
-    org: 'HP',
+    title: 'Selected as SAARTHI',
+    org: 'UGC, India',
     year: '2024',
-    description: 'Engineering lead for a GPT assistant that connected 80+ HBCU students to housing and jobs; finished 2nd among 15 finalist teams.',
+    description: 'Selected as "SAARTHI" representing the institute at Central level under UGC, India.',
   },
   {
-    title: '2nd Place - CivicHacks',
-    org: 'Major League Hacking',
-    year: '2023',
-    description: 'Built Community Reach, a civic-tech platform using HTML/CSS/JS that elevated neighborhood resources and earned "Best Civic Hack."',
+    title: 'AI Bootcamp Facilitator',
+    org: 'FEAT, DMIHER',
+    year: '2024',
+    description: 'Facilitated AI bootcamp for students, teaching machine learning basics, AI tools, and practical applications while mentoring participants in real-world AI projects.',
   },
   {
-    title: 'NSBE / BVCC / Amazon Campus Prep',
-    org: 'Leadership & Service',
-    year: 'Ongoing',
-    description: `Serve as a Student Leader for the BVCC SWE track, engage with NSBE Nashville, and completed Amazon's Campus Prep Series to mentor peers.`,
+    title: 'Data Science Lead, GDSC',
+    org: 'Google Developer Student Club',
+    year: '2023 - 2024',
+    description: 'Conducted sessions, trained 100+ students, and led the Data Science team in exploring Cloud, AI, and ML technologies.',
+  },
+  {
+    title: 'Vice President, Student Council',
+    org: 'FEAT, DMIHER',
+    year: '2023 - 2024',
+    description: 'Organized 50+ technical and non-technical college events as Vice President of the Student Council.',
+  },
+  {
+    title: 'Volunteer, Sanskar Shibir NGO',
+    org: 'Sanskar Shibir NGO',
+    year: '2013 - Present',
+    description: 'Volunteering for 11 years in an NGO focused on education awareness in rural areas, impacting 500+ students.',
+  },
+  {
+    title: '8 Published Research Papers',
+    org: 'IEEE, AIP, AIMS Bioengineering',
+    year: '2023 - 2025',
+    description: 'Published research in Human-Computer Interaction in Healthcare, 5G/6G AI Systems, Early Disease Detection, Blockchain in EHR, Cloud in Healthcare, Heart-Attack Prediction, and Shoulder Angle Measurement.',
   },
 ];
 
@@ -63,8 +63,8 @@ const Awards: React.FC = () => {
   return (
     <div className="awards-container">
       <div className="awards-header">
-        <h2>Fellowships & Awards</h2>
-        <p>Programs and communities that shape how I lead, build inclusive products, and give back to the next wave of engineers.</p>
+        <h2>Achievements & Community</h2>
+        <p>Awards, leadership roles, and community initiatives that define my journey in AI, research, and education.</p>
       </div>
       <div className="awards-grid">
         {awards.map((award, index) => (

@@ -8,13 +8,13 @@ const bannerData: ProfileBannerType = {
   backgroundImage: {
     url: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80',
   },
-  headline: 'Full Stack AI & Cloud Software Engineer',
+  headline: 'AI & Data Science Enthusiast | Research Intern',
   resumeLink: {
-    url: '/Adegbesan_Oludolapo_Resume__2_.pdf',
+    url: '#',
   },
-  linkedinLink: 'https://www.linkedin.com/in/oludolapo-adegbesan-3168a7218/',
+  linkedinLink: 'https://in.linkedin.com/in/saniya-saratkar-1624ba250',
   profileSummary:
-    "From building privacy tools at Google to creating GPT agents that help HBCU students find housing and jobs, I design software that makes complex things simple. I work across the stack (React, Python, TypeScript, cloud platforms) crafting AI powered products that scale cleanly and feel effortless to use. Code2040, MLT, and BVCC taught me that engineering isn't just about shipping code; it's about understanding who you build for and opening doors with every release.",
+    "As a third-year BTech student in AI and Data Science at DMIHER, I'm passionate about solving real-world problems through AI-driven solutions. From conducting ESG research on AI models at IIT Kharagpur to developing edge device AI at Deeptimaan Info System, I blend academic rigor with hands-on innovation. With 8 published research papers in IEEE, AIP, and AIMS journals, and recognition including a $8,275 UC Berkeley AI scholarship, I continuously seek opportunities to push the boundaries of AI in healthcare, deep learning, and beyond.",
 };
 
 interface ProfileBannerProps {

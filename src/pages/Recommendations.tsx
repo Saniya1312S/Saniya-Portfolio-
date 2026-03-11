@@ -1,56 +1,54 @@
 import React from 'react';
 import './Recommendations.css';
 
-const letters = [
+const references = [
   {
-    title: 'Recommendation Letter 1',
-    file: 'Recommendation Letter 1.jpeg',
-    summary: 'Leadership and technical depth highlighted by mentors.',
+    name: 'Dr. K. T. V. Reddy',
+    title: 'Dean, Faculty of Engineering & Technology',
+    affiliation: 'FEAT, DMIHER, Sawangi, Maharashtra, India 442001',
+    email: 'dean.feat@dmiher.edu.in',
   },
   {
-    title: 'Recommendation Letter 2',
-    file: 'Recommendation Letter 2.jpeg',
-    summary: 'Community organizing and student leadership accolades.',
+    name: 'Dr. Prateek Verma',
+    title: 'Head of Research and Development',
+    affiliation: 'Department of AI & ML, FEAT, DMIHER, Sawangi, Maharashtra, India 442001',
+    email: 'prateekv.feat@dmiher.edu.in',
   },
   {
-    title: 'Recommendation Letter 3',
-    file: 'Recommendation Letter 3.jpeg',
-    summary: 'Recognition for AI/ML experimentation and grit.',
-  },
-  {
-    title: 'Recommendation Letter 4',
-    file: 'Recommendation Letter 4.jpeg',
-    summary: 'Multi-year character reference grounded in service.',
+    name: 'Dr. Praveen Kumar',
+    title: 'Mentor of Research and Development',
+    affiliation: 'Department of CS & Medical Engineering, FEAT, DMIHER, Sawangi, Maharashtra, India 442001',
+    email: 'praveenk.feat@dmiher.edu.in',
   },
 ];
 
 const Recommendations: React.FC = () => {
-  const basePath = `${process.env.PUBLIC_URL}/Recommedndation%20letters`;
-
   return (
     <div className="recommendations-shell">
       <header className="recommendations-hero">
-        <p className="eyebrow">Receipts from mentors & partners</p>
-        <h1>Recommendation Letters</h1>
-        <p>Downloadable scans from professors, program leads, and clients—hosted right in this portfolio.</p>
+        <p className="eyebrow">Trusted mentors & guides</p>
+        <h1>References</h1>
+        <p>Professors and research mentors who can speak to my work, dedication, and contributions.</p>
       </header>
 
       <div className="letters-grid">
-        {letters.map(letter => (
-          <article key={letter.file} className="letter-card">
-            <div className="letter-frame">
-              <img src={`${basePath}/${encodeURIComponent(letter.file)}`} alt={letter.title} loading="lazy" />
+        {references.map((ref) => (
+          <article key={ref.email} className="letter-card">
+            <div className="letter-frame" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)', minHeight: '200px', padding: '2rem', textAlign: 'center' }}>
+              <div>
+                <h2 style={{ color: '#e94560', margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>{ref.name}</h2>
+                <p style={{ color: '#eee', margin: '0', fontSize: '0.95rem' }}>{ref.title}</p>
+              </div>
             </div>
             <footer className="letter-meta">
-              <h3>{letter.title}</h3>
-              <p>{letter.summary}</p>
+              <h3>{ref.name}</h3>
+              <p>{ref.title}</p>
+              <p style={{ fontSize: '0.85rem', opacity: 0.8 }}>{ref.affiliation}</p>
               <a
-                href={`${basePath}/${encodeURIComponent(letter.file)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                download
+                href={`mailto:${ref.email}`}
+                className="contact-ref-link"
               >
-                View / Download
+                {ref.email}
               </a>
             </footer>
           </article>

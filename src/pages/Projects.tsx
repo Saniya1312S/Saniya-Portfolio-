@@ -4,21 +4,21 @@ import { FaReact, FaNodeJs, FaAws, FaDatabase, FaDocker, FaAngular, FaGithub, Fa
 import { SiRubyonrails, SiPostgresql, SiMongodb, SiMaterialdesign, SiHtml5, SiCss3, SiJquery, SiAwsamplify, SiFirebase, SiTerraform, SiArgo, SiCplusplus, SiFlask, SiLeaflet, SiGooglemaps, SiSupabase, SiOpenai, SiTailwindcss, SiTypescript, SiFastapi, SiTensorflow, SiOpencv, SiCsharp, SiDotnet } from 'react-icons/si';
 import { GrDeploy, GrKubernetes } from "react-icons/gr";
 
-const githubUsername = 'Havcker243';
+const githubUsername = 'saniyasaratkar';
 const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
 const githubApiHeaders: HeadersInit = githubToken
   ? {
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${githubToken}`,
-    }
+    Accept: 'application/vnd.github+json',
+    Authorization: `Bearer ${githubToken}`,
+  }
   : {
-      Accept: 'application/vnd.github+json',
-    };
+    Accept: 'application/vnd.github+json',
+  };
 const githubRawHeaders: HeadersInit = githubToken
   ? {
-      Accept: 'text/plain',
-      Authorization: `Bearer ${githubToken}`,
-    }
+    Accept: 'text/plain',
+    Authorization: `Bearer ${githubToken}`,
+  }
   : { Accept: 'text/plain' };
 
 const techIcons: { [key: string]: JSX.Element } = {
@@ -84,6 +84,11 @@ const techIcons: { [key: string]: JSX.Element } = {
   'OpenCV': <SiOpencv />,
   'C#': <SiCsharp />,
   '.NET': <SiDotnet />,
+  'MediaPipe': <FaPython />,
+  'Deep Learning': <SiTensorflow />,
+  'Machine Learning': <FaPython />,
+  'Computer Vision': <SiOpencv />,
+  'IoT': <FaDatabase />,
 };
 
 interface SpotlightProjectConfig {
@@ -108,155 +113,44 @@ interface SpotlightProject extends SpotlightProjectConfig {
 
 const curatedProjects: SpotlightProjectConfig[] = [
   {
-    title: 'Bluealpha',
-    repoSlug: 'Bluealpha',
+    title: 'AI Driven Frozen Shoulder Angle Measurement',
+    repoSlug: 'frozen-shoulder-angle',
     summary:
-      'Data and ML observability cockpit that ingests warehouse metrics, annotates anomalies, and packages playbooks for Ops so incidents shrink to minutes instead of hours.',
-    techUsed: ['Python', 'FastAPI', 'PostgreSQL'],
-    githubUrl: 'https://github.com/Havcker243/Bluealpha',
+      'Developed a real-time system for measuring shoulder angles using MediaPipe, computer vision, and machine learning to aid personalized therapy.',
+    techUsed: ['Python', 'MediaPipe', 'Computer Vision', 'Machine Learning'],
+    githubUrl: `https://github.com/${githubUsername}`,
     image: {
-      url: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Analytics dashboard concept art',
+      url: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
+      alt: 'AI-driven shoulder angle measurement system',
     },
   },
   {
-    title: 'Concilio Compass Connect',
-    repoSlug: 'concilio-compass-connect',
+    title: 'Sound-Based Lung Disease Classification',
+    repoSlug: 'lung-disease-classification',
     summary:
-      "Scheduling + case management hub for Concilio's Compass program -- staff log sessions, track volunteers, and broadcast resource drops to families through a single React dashboard.",
-    techUsed: ['React', 'TypeScript', 'Supabase'],
-    githubUrl: 'https://github.com/Havcker243/concilio-compass-connect',
+      'Developed an efficient system for classifying lung diseases based on sound patterns using deep learning techniques, enabling early diagnosis and improved patient care.',
+    techUsed: ['Python', 'Deep Learning', 'TensorFlow', 'Machine Learning'],
+    githubUrl: `https://github.com/${githubUsername}`,
     image: {
-      url: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Community collaboration placeholder',
+      url: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80',
+      alt: 'Deep learning lung disease classification',
     },
   },
   {
-    title: 'SafePass',
-    repoSlug: 'safepass-2',
+    title: 'Pressure Ulcer Prevention System',
+    repoSlug: 'pressure-ulcer-monitor',
     summary:
-      'Emergency-first "digital vault" with a panic button, GPS broadcasting, Leaflet community alerts, and a secure document locker built in React + Capacitor for Android/iOS.',
-    techUsed: ['TypeScript', 'React', 'Tailwind CSS', 'Leaflet'],
-    githubUrl: 'https://github.com/Havcker243/safepass-2',
+      'Developed a prototype to monitor pressure points and movement in bedridden patients to prevent pressure ulcers, focusing on improving patient care and reducing complications.',
+    techUsed: ['Python', 'IoT', 'Machine Learning', 'Computer Vision'],
+    githubUrl: `https://github.com/${githubUsername}`,
     image: {
-      url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Emergency response concept art',
-    },
-  },
-  {
-    title: 'CleanSkys',
-    repoSlug: 'cleanskys',
-    summary:
-      'AI-assisted weather and pollution radar that overlays storm severity, AQI breakpoints, and contextual tips on a Netflix-like dashboard for local governments.',
-    techUsed: ['React', 'TypeScript', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/Havcker243/cleanskys',
-    image: {
-      url: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Weather visualization placeholder',
-    },
-  },
-  {
-    title: 'Mafia Manager',
-    repoSlug: 'Mafia-Game-',
-    summary:
-      'C#/.NET desktop recreation of Mafia with animated windows, soundtrack cues, narrator voiceovers, and role-management UX tuned for parties.',
-    techUsed: ['C#', '.NET'],
-    githubUrl: 'https://github.com/Havcker243/Mafia-Game-',
-    image: {
-      url: 'https://raw.githubusercontent.com/Havcker243/Mafia-Game-/main/image/README/1707081041665.png',
-      alt: 'Mafia Manager main window',
-    },
-  },
-  {
-    title: 'Studyme',
-    repoSlug: 'Studyme-',
-    summary:
-      'AI co-pilot that ingests PDFs, atomizes them into flashcards/insights, and pairs the lesson plan with web research suggestions for each module.',
-    techUsed: ['React', 'TypeScript', 'Supabase', 'OpenAI'],
-    githubUrl: 'https://github.com/Havcker243/Studyme-',
-    image: {
-      url: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Studyme concept placeholder',
-    },
-  },
-  {
-    title: 'Object & Emotion Detection',
-    repoSlug: 'Object-and-emotion_Detection',
-    summary:
-      'YOLOv3-based multi-object tracker that layers Haar cascades and a CNN sentiment head to color-code faces by emotion in real time.',
-    techUsed: ['Python', 'TensorFlow', 'OpenCV', 'YOLOv3'],
-    githubUrl: 'https://github.com/Havcker243/Object-and-emotion_Detection',
-    image: {
-      url: 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Neural network concept art',
-    },
-  },
-  {
-    title: 'Netflix-Inspired Portfolio',
-    repoSlug: 'netflix_portfolio',
-    summary:
-      'A cinematic single-page experience inspired by Netflix where visitors pick a persona tile and explore projects, recommendations, AMA responses, and more backed by Supabase + Gemini.',
-    techUsed: ['React', 'TypeScript', 'Supabase', 'OpenAI'],
-    githubUrl: 'https://github.com/Havcker243/netflix_portfolio',
-    liveUrl: 'https://oludolapo.vercel.app/',
-    image: {
-      url: 'https://raw.githubusercontent.com/Havcker243/netflix_portfolio/main/image.png',
-      alt: 'Netflix inspired portfolio splash page',
-    },
-  },
-  {
-    title: 'Dallas Zip Insight Map',
-    repoSlug: 'dallas-zip-insight-map',
-    summary:
-      'An interactive Leaflet/Vite dashboard that shades Dallas-area ZIP codes, surfaces assistance needs, and pairs each selection with demographic callouts pulled from a shared data model.',
-    techUsed: ['React', 'TypeScript', 'Leaflet', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/Havcker243/dallas-zip-insight-map',
-    liveUrl: 'https://dallas-zip-insight-map.vercel.app',
-    image: {
-      url: 'https://raw.githubusercontent.com/Havcker243/dallas-zip-insight-map/main/public/readme/12.png',
-      alt: 'Dallas Zip Insight Map choropleth screenshot',
-    },
-  },
-  {
-    title: 'PathfinderGPT',
-    repoSlug: 'PathfinderGPT-3.5',
-    summary:
-      'Career roadmap assistant with a React front end and Flask API that uses OpenAI prompts to generate job matches plus personalized academic plans for undecided college students.',
-    techUsed: ['React', 'Flask.py', 'OpenAI', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/Havcker243/PathfinderGPT-3.5',
-    image: {
-      url: 'https://raw.githubusercontent.com/Havcker243/PathfinderGPT-3.5/main/image/README/1723320830367.png',
-      alt: 'PathfinderGPT dashboard layout',
-    },
-  },
-  {
-    title: 'Community Reach',
-    repoSlug: 'Community-Reach-',
-    summary:
-      'A community bulletin that lets neighbors host events, search by mood or location, and read curated highlights powered by Flask routes, AWS-hosted data, and planned Google Maps integrations.',
-    techUsed: ['Flask.py', 'Python', 'AWS', 'PostgreSQL'],
-    githubUrl: 'https://github.com/Havcker243/Community-Reach-',
-    liveUrl: 'https://havcker243.github.io/Community-Reach-/',
-    image: {
-      url: 'https://raw.githubusercontent.com/Havcker243/Community-Reach-/main/image/README/1704745104591.png',
-      alt: 'Community Reach landing and host form preview',
-    },
-  },
-  {
-    title: 'Text Frequency Analyzer',
-    repoSlug: 'Textbased-predictor',
-    summary:
-      'A C++ CLI that ingests large text files, ranks top words, runs a dictionary-driven sentiment pass, and exports CSV/JSON/TXT reports for downstream analytics.',
-    techUsed: ['C/C++', 'GoogleTest', 'Sentiment'],
-    githubUrl: 'https://github.com/Havcker243/Textbased-predictor',
-    image: {
-      url: 'https://raw.githubusercontent.com/Havcker243/Textbased-predictor/main/image/1718101862362.png',
-      alt: 'Text Frequency Analyzer CLI screenshot',
+      url: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80',
+      alt: 'Healthcare IoT monitoring system',
     },
   },
 ];
 
-const githubShowcaseUrl = 'https://github.com/Havcker243?tab=repositories';
+const githubShowcaseUrl = `https://github.com/${githubUsername}?tab=repositories`;
 
 interface GitHubRepo {
   id: number;
@@ -327,7 +221,7 @@ const Projects: React.FC = () => {
     async function fetchRepos() {
       try {
         setLoading(true);
-        const response = await fetch('https://api.github.com/users/Havcker243/repos?per_page=100&sort=updated', {
+        const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?per_page=100&sort=updated`, {
           headers: githubApiHeaders,
         });
         if (!response.ok) {
@@ -429,8 +323,8 @@ const Projects: React.FC = () => {
     <div className="projects-container">
       <div className="projects-cta">
         <div>
-          <h2>Live Builds & Experiments</h2>
-          <p>More shipping logs, hackathon artifacts, and AI experiments live on my GitHub.</p>
+          <h2>Research & Projects</h2>
+          <p>AI-driven solutions in healthcare, deep learning, and data science.</p>
         </div>
         <a href={githubShowcaseUrl} target="_blank" rel="noopener noreferrer" className="github-link">
           <FaGithub /> Explore GitHub
@@ -525,6 +419,3 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
-
-
-

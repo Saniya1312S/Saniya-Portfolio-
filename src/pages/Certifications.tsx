@@ -50,7 +50,7 @@ const Certifications: React.FC = () => {
           <p>Verified badges and nano-degrees are being curated.</p>
           <p>Check back soon or peek at my LinkedIn for the latest completions.</p>
           <a
-            href="https://www.linkedin.com/in/oludolapo-adegbesan-3168a7218/"
+            href="https://in.linkedin.com/in/saniya-saratkar-1624ba250"
             target="_blank"
             rel="noopener noreferrer"
           >

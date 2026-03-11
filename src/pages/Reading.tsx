@@ -34,7 +34,7 @@ const books = [
   },
   {
     title: 'Engineering Empathy',
-    author: 'Oludolapo Adegbesan (in progress)',
+    author: 'Saniya Saratkar (in progress)',
     imgSrc: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80',
     description: 'Notes from fellowships, mentorship, and the inclusive tools I am building next.',
   },
