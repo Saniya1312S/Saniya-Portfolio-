@@ -113,6 +113,30 @@ interface SpotlightProject extends SpotlightProjectConfig {
 
 const curatedProjects: SpotlightProjectConfig[] = [
   {
+    title: 'SignAssistant – Real-Time ISL Translator',
+    repoSlug: 'sign-assistant',
+    summary:
+      'Built a real-time AI system translating ISL gestures into text and speech for signer–non-signer communication. Extracted MediaPipe keypoints and trained Random Forest, LSTM and CNN models with hyperparameter tuning for gesture classification; integrated Gemini API for multilingual responses. Runner-up at MedicoEngino Hackathon.',
+    techUsed: ['Python', 'MediaPipe', 'Machine Learning', 'TensorFlow'],
+    githubUrl: `https://github.com/${githubUsername}`,
+    image: {
+      url: 'https://images.unsplash.com/photo-1589254065878-42c014d074b1?auto=format&fit=crop&w=1200&q=80',
+      alt: 'Sign language AI translation system',
+    },
+  },
+  {
+    title: 'MediEvidence – RAG Clinical Evidence Assistant',
+    repoSlug: 'medi-evidence',
+    summary:
+      'Built a domain-specific AI assistant to query medical research papers & generate cited answers using an end-to-end RAG pipeline with Sentence-Transformer embeddings, FAISS, BM25 hybrid retrieval & cross-encoder reranking. Achieved 87.3% retrieval precision while reducing hallucinations through grounded retrieval.',
+    techUsed: ['Python', 'OpenAI', 'Machine Learning', 'Deep Learning'],
+    githubUrl: `https://github.com/${githubUsername}`,
+    image: {
+      url: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80',
+      alt: 'Medical AI research assistant',
+    },
+  },
+  {
     title: 'AI Driven Frozen Shoulder Angle Measurement',
     repoSlug: 'frozen-shoulder-angle',
     summary:
@@ -134,18 +158,6 @@ const curatedProjects: SpotlightProjectConfig[] = [
     image: {
       url: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80',
       alt: 'Deep learning lung disease classification',
-    },
-  },
-  {
-    title: 'Pressure Ulcer Prevention System',
-    repoSlug: 'pressure-ulcer-monitor',
-    summary:
-      'Developed a prototype to monitor pressure points and movement in bedridden patients to prevent pressure ulcers, focusing on improving patient care and reducing complications.',
-    techUsed: ['Python', 'IoT', 'Machine Learning', 'Computer Vision'],
-    githubUrl: `https://github.com/${githubUsername}`,
-    image: {
-      url: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Healthcare IoT monitoring system',
     },
   },
 ];

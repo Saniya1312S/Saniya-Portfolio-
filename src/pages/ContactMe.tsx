@@ -7,10 +7,10 @@ import { ContactMe as IContactMe } from '../types';
 const contactInfo: IContactMe = {
   profilePicture: { url: profilePic },
   name: 'Saniya Saratkar',
-  title: 'AI & Data Science Student | Research Intern',
+  title: 'AI & Data Science Enthusiast',
   summary:
-    'Third-year BTech student in AI and Data Science at DMIHER, passionate about solving real-world problems through AI-driven solutions. Experienced in ESG research on AI models for financial data analysis at IIT Kharagpur, edge device AI development at Deeptimaan Info System, and real-time computer vision systems. Published 8 research papers in IEEE, AIP, and AIMS Bioengineering journals spanning healthcare AI, 5G/6G systems, blockchain in EHR, and cloud computing.',
-  companyUniversity: 'FEAT, DMIHER (DU), Wardha · BTech AI & Data Science · 2026',
+    'With 2+ years of experience as a Data Science Intern at ISRO, UC Berkeley, IIT Kharagpur & Deeptiman System. Skilled in Gen AI, NLP, Computer Vision, and building end-to-end AI applications. Received an $8,500 merit-based scholarship for the UC Berkeley AI Internship (2025) and authored 20+ research publications across IEEE, AIP, and AIMS Bioengineering journals.',
+  companyUniversity: 'FEAT, DMIHER (DU), Wardha · BTech AI & Data Science · 2022-2026 (CGPA: 8.4)',
   linkedinLink: 'https://in.linkedin.com/in/saniya-saratkar-1624ba250',
   email: 'saniyasaratkar1312@gmail.com',
   phoneNumber: '+917276253304',
@@ -21,7 +21,7 @@ const ContactMe: React.FC = () => {
     <div className="contact-container">
       <section className="contact-hero">
         <p className="hero-eyebrow">Let's Connect</p>
-        <h1>AI & Data Science Student | Research Intern</h1>
+        <h1>AI & Data Science Enthusiast</h1>
         <p className="hero-copy">{contactInfo.summary}</p>
         <div className="hero-buttons">
           <a

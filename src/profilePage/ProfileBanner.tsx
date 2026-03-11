@@ -8,13 +8,13 @@ const bannerData: ProfileBannerType = {
   backgroundImage: {
     url: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80',
   },
-  headline: 'AI & Data Science Enthusiast | Research Intern',
+  headline: 'AI & Data Science Enthusiast',
   resumeLink: {
     url: '#',
   },
   linkedinLink: 'https://in.linkedin.com/in/saniya-saratkar-1624ba250',
   profileSummary:
-    "As a third-year BTech student in AI and Data Science at DMIHER, I'm passionate about solving real-world problems through AI-driven solutions. From conducting ESG research on AI models at IIT Kharagpur to developing edge device AI at Deeptimaan Info System, I blend academic rigor with hands-on innovation. With 8 published research papers in IEEE, AIP, and AIMS journals, and recognition including a $8,275 UC Berkeley AI scholarship, I continuously seek opportunities to push the boundaries of AI in healthcare, deep learning, and beyond.",
+    "With 2+ years of experience as a Data Science Intern, I have worked at multiple places including ISRO, UC Berkeley, & IIT Kharagpur. Skilled in Gen AI, NLP, Computer Vision, and building end-to-end AI applications. Received an $8,500 merit-based scholarship for the UC Berkeley AI Internship (2025) and authored 20+ research publications across IEEE, AIP, and AIMS Bioengineering journals.",
 };
 
 interface ProfileBannerProps {
