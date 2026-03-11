@@ -10,7 +10,7 @@ const bannerData: ProfileBannerType = {
   },
   headline: 'AI & Data Science Enthusiast',
   resumeLink: {
-    url: '#',
+    url: 'https://drive.google.com/drive/folders/1pI-Q-yOxHEimdxO9iekUwsbELwM1zaVu?usp=drive_link',
   },
   linkedinLink: 'https://in.linkedin.com/in/saniya-saratkar-1624ba250',
   profileSummary:
