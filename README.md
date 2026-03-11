@@ -1,30 +1,30 @@
-# Netflix-Inspired Portfolio
+# Saniya Saratkar – Netflix-Inspired Portfolio
 
-This repository powers my personal website, a Netflix-inspired experience that turns my resume into something you can actually binge. Visitors land on the familiar Netflix sting, pick a persona tile, and then explore rows of projects, fellowships, awards, playlists, and reading lists. All of the copy, media, and AMA context can be refreshed from Supabase and live GitHub data so the site stays current without a redeploy.
+A Netflix-inspired portfolio website that transforms Saniya Saratkar's resume into an immersive, binge-worthy experience. Visitors land on the cinematic Netflix sting with "SANIYA SARATKAR" arc text, pick a persona tile, and then explore work experience at ISRO, UC Berkeley, IIT Kharagpur & Deeptiman System — plus projects, awards, skills, and an AI chatbot powered by Gemini.
 
 ![Preview](readmes/main-layout.png)
 
 ## Experience Overview
-- **Cinematic intro -> persona gate.** One click triggers the Netflix audio sting and fans out persona tiles. Each persona injects its own GIF background so every visitor gets a bespoke home screen.
-- **Profile rows like a streaming app.** The hero banner links to my resume and LinkedIn, and Top Picks / Continue Watching rows surface curated sections depending on the selected persona.
-- **Deep-dive sections for every audience.** Dedicated routes walk through work experience, skills, projects, awards, certifications, recommendations, music, reading, blogs, and work permits using the same responsive layout.
-- **Ask Me Anything powered by Gemini.** OA Bot reads Supabase data about my experience and streams conversational markdown answers so people can chat instead of scrolling forever.
-- **Live GitHub + Supabase content.** Spotlight cards hydrate with README summaries and cover art from GitHub, while Supabase tables keep the timeline, skills, and contact info editable without code changes.
+- **Cinematic intro → persona gate.** One click triggers the Netflix audio sting and transitions to persona tiles. Each persona injects its own GIF background.
+- **Profile rows like a streaming app.** The hero banner links to the resume (Google Drive) and LinkedIn, with Top Picks / Continue Watching rows for curated sections.
+- **Deep-dive sections for every audience.** Dedicated routes for work experience, skills, projects, awards, certifications, recommendations, music, reading, blogs, and contact.
+- **Ask Me Anything powered by Gemini.** SS Bot reads portfolio data and streams conversational markdown answers about Saniya's research, skills, and experience.
+- **Live GitHub + Supabase content.** Spotlight cards hydrate with README summaries and cover art from GitHub, while Supabase tables keep content editable without code changes.
 
 ## Screenshots
 ![Persona Selector](readmes/browser-page.png)
-_Netflix-style persona gate that sets the tone and swaps background GIFs once a visitor chooses who they are._
+_Netflix-style persona gate — choose "Recruiter", "Collaborator", or more to personalise the experience._
 
 ![Recruiter Hero](readmes/recruiter-hero.png)
-_Recruiter persona home screen with the hero banner, resume + LinkedIn CTAs, and the navbar that unlocks deeper routes._
+_Profile hero banner with headline, resume & LinkedIn CTAs, and navigation to all sections._
 
-![OA Bot Chat](readmes/bot-page.png)
-_Gemini-backed AMA panel answering questions with live context from Supabase so visitors can chat about my story._
+![SS Bot Chat](readmes/bot-page.png)
+_Gemini-backed AI chatbot answering questions about Saniya's career, skills, projects, and publications._
 
 ## Highlights
 - **Intro + persona gate** with custom audio, animated GIF avatars, and router state to theme the profile page.
 - **Supabase-powered content** for timeline, skills, projects, recommendations, contact, etc., with graceful fallbacks while you seed tables.
-- **Ask Me Anything (OA Bot)** streams site context into Gemini and renders markdown replies so visitors can chat about Dolapo's story.
+- **Ask Me Anything (SS Bot)** streams site context into Gemini and renders markdown replies so visitors can chat about Saniya's story.
 - **Responsive Netflix UI** with shared navbar/sidebar, section cards, GitHub repo feed, playlists, reading list, and downloadable recommendation letters.
 
 ## Tech Stack
@@ -69,15 +69,12 @@ Then run `npm start` and open http://localhost:3000.
 - `npm run build` - optimized bundle in `build/`
 - `npm test` - CRA Jest suite
 
-## Deployment (Vercel)
-1. In Project -> Settings -> Environment Variables add:
-   - `REACT_APP_SUPABASE_URL`
-   - `REACT_APP_SUPABASE_ANON_KEY`
+## Deployment (GitHub Pages)
+1. Run `npm run deploy` to build and publish to GitHub Pages.
+2. Or in Project → Settings → Environment Variables add:
    - `REACT_APP_GEMINI_API_KEY`
-   - `REACT_APP_GITHUB_TOKEN`
-2. Build command: `npm run build`
-3. Output directory: `build`
-4. Deploy via dashboard or `vercel --prod`.
+   - `REACT_APP_GITHUB_TOKEN` (optional, for higher GitHub API limits)
+3. The site is live at: https://saniya1312s.github.io/Saniya-Portfolio-/
 
 ## Sample Supabase Schema
 ```sql
