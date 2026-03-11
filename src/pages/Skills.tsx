@@ -44,15 +44,15 @@ const fallbackSkills: Skill[] = [
     icon: 'SiMysql',
   },
   {
-    name: 'NumPy, Pandas, Matplotlib, Seaborn',
+    name: 'NumPy & Pandas',
     category: 'Languages & Libraries',
-    description: 'Core data science libraries for numerical computing, data manipulation, and visualization.',
+    description: 'Core data science libraries for numerical computing, data manipulation, and visualization with Matplotlib & Seaborn.',
     icon: 'FaPython',
   },
   {
-    name: 'Scikit-learn & TensorFlow',
+    name: 'Scikit-learn & TF',
     category: 'Languages & Libraries',
-    description: 'Machine learning and deep learning frameworks for building and training AI models.',
+    description: 'Machine learning (Scikit-learn) and deep learning (TensorFlow) frameworks for building and training AI models.',
     icon: 'FaPython',
   },
   {
