@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Saniya-Portfolio-/static/css/main.237870d2.css",
+    "main.js": "/Saniya-Portfolio-/static/js/main.1bdac673.js",
+    "static/js/453.95bdd5f0.chunk.js": "/Saniya-Portfolio-/static/js/453.95bdd5f0.chunk.js",
+    "static/media/saniya-profile.jpg": "/Saniya-Portfolio-/static/media/saniya-profile.97a96042130737a056f2.jpg",
+    "static/media/intro-logo.png": "/Saniya-Portfolio-/static/media/intro-logo.2c9d3b1eb246da9218f1.png",
+    "static/media/grey.png": "/Saniya-Portfolio-/static/media/grey.bbfd7fb8e095529e355c.png",
+    "static/media/blue.png": "/Saniya-Portfolio-/static/media/blue.9b293a4a6ef065903a8f.png",
+    "static/media/netflix-sound.mp3": "/Saniya-Portfolio-/static/media/netflix-sound.a13a4aedfb5da5a27f04.mp3",
+    "static/media/yellow.png": "/Saniya-Portfolio-/static/media/yellow.2631c5cf63f02f6bbfbf.png",
+    "static/media/red.png": "/Saniya-Portfolio-/static/media/red.6138d0c52611186c9d03.png",
+    "index.html": "/Saniya-Portfolio-/index.html",
+    "main.237870d2.css.map": "/Saniya-Portfolio-/static/css/main.237870d2.css.map",
+    "main.1bdac673.js.map": "/Saniya-Portfolio-/static/js/main.1bdac673.js.map",
+    "453.95bdd5f0.chunk.js.map": "/Saniya-Portfolio-/static/js/453.95bdd5f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.237870d2.css",
+    "static/js/main.1bdac673.js"
+  ]
+}
