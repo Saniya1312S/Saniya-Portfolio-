@@ -1,0 +1,56 @@
+.layout-shell {
+  min-height: 100vh;
+  background-color: #050505;
+  color: #fff;
+}
+
+.layout-back-row {
+  padding: 120px 5vw 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.layout-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(145deg, rgba(21, 21, 21, 0.9), rgba(74, 25, 25, 0.9));
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.layout-back-button:hover {
+  transform: translateX(-4px);
+  border-color: rgba(229, 9, 20, 0.8);
+  box-shadow: 0 8px 18px rgba(229, 9, 20, 0.35);
+}
+
+.layout-back-button svg {
+  pointer-events: none;
+}
+
+.layout-content {
+  padding: 0 5vw 3rem;
+}
+
+@media (max-width: 768px) {
+  .layout-back-row {
+    padding: 100px 1.5rem 1rem;
+  }
+
+  .layout-content {
+    padding: 0 1.5rem 2rem;
+  }
+
+  .layout-back-button {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,133 @@
+.top-picks-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.row-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.row-title {
+  font-size: clamp(1.7rem, 2.6vw, 2.4rem);
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.row-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.75rem;
+  padding-bottom: 0.5rem;
+ }
+
+.pick-card {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: slideIn 0.5s ease forwards;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  scroll-snap-align: start;
+  border: 1px solid transparent;
+}
+
+.pick-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 24px var(--accent-glow);
+  border-color: var(--accent-soft);
+}
+
+.pick-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.pick-card:hover .pick-image {
+  transform: scale(1.05);
+}
+
+.pick-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8));
+  box-shadow: inset 0 -40px 80px var(--accent-soft);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.1rem;
+}
+
+.pick-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pick-icon {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.pick-label {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-right: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .card-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pick-card {
+    flex: 0 0 80%;
+    height: 220px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .pick-card {
+    flex: 0 0 85%;
+    height: 200px;
+  }
+}

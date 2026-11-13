@@ -1,0 +1,240 @@
+.contact-container {
+  padding: 110px 24px 140px;
+  background-color: #050505;
+  color: #f7f7f7;
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-hero {
+  text-align: center;
+  max-width: 760px;
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: #e50914;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-hero h1 {
+  font-size: clamp(2.6rem, 4.5vw, 3.6rem);
+  margin-bottom: 1.2rem;
+}
+
+.hero-copy {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-button.primary {
+  background: linear-gradient(120deg, #e50914, #ff4b2b);
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(229, 9, 20, 0.45);
+}
+
+.hero-button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+}
+
+.contact-grid {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 960px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.linkedin-badge-custom {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #141414, #1f1f1f);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  color: #e6e6e6;
+  min-width: 300px;
+}
+
+.badge-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.badge-content h3 {
+  margin: 0;
+}
+
+.badge-name {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge-title {
+  font-size: 1.1rem;
+  margin: 4px 0 8px;
+  color: #bcbcbc;
+}
+
+.badge-description {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.badge-company {
+  font-size: 1rem;
+  color: #999;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.badge-link:hover {
+  background-color: #005983;
+}
+
+.contact-details {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(145deg, #1b1b1b, #262626);
+  padding: 16px 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 38px rgba(229, 9, 20, 0.35);
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  color: #e50914;
+}
+
+.contact-link {
+  color: #fff;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-fun {
+  margin-top: 4px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f0f0f0;
+  justify-content: center;
+}
+
+.coffee-icon {
+  font-size: 2rem;
+  color: #ff9900;
+  animation: swing 1.3s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .linkedin-badge-custom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .badge-avatar {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .badge-content {
+    text-align: center;
+  }
+
+  .contact-grid {
+    gap: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
